@@ -1,6 +1,6 @@
 [bookstore]
-shopping       ansible_ssh_host=10.0.1.10
-order          ansible_ssh_host=10.0.1.20
+order          ansible_ssh_host=10.0.1.10
+shopping       ansible_ssh_host=10.0.1.20
 productcatalog ansible_ssh_host=10.0.1.30
 
 [bookstore:vars]
