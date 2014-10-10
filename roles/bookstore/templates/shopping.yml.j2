@@ -1,0 +1,17 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 9080
+
+logging:
+  level: INFO
+  loggers:
+    se.citerus: DEBUG
+
+  appenders:
+    - type: console
+
+productCatalogServiceUrl : http://{{ product_host }}:8090/products/

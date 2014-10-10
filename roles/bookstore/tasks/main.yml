@@ -1,0 +1,5 @@
+- name: Copy jar files
+  copy: src=../deploy-jars/{{ jar_file }} dest=/home/vagrant/{{ jar_file }} owner=vagrant group=vagrant mode=0644
+
+- name: Copy configuration
+  template: src="{{ yml_file }}.j2" dest=/home/vagrant/{{ yml_file }} owner=vagrant group=vagrant mode=0644
