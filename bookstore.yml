@@ -13,7 +13,7 @@
   roles:
     - { role: bookstore, context: 'order' }
 
-- hosts: product
+- hosts: productcatalog
   sudo: yes
   roles:
-    - { role: bookstore, context: 'product' }
+    - { role: bookstore, context: 'productcatalog' }

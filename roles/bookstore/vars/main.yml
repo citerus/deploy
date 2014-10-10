@@ -3,4 +3,4 @@ jar_file: "{{ context }}-context-1.0-SNAPSHOT.jar"
 
 yml_file: "{{ context }}.yml"
 
-product_host: "{{ hostvars['product']['ansible_ssh_host'] }}"
+productcatalog_host: "{{ hostvars['productcatalog']['ansible_ssh_host'] }}"

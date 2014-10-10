@@ -12,8 +12,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     order.vm.network "private_network", ip: "10.0.1.20"
   end
 
-  config.vm.define "product" do |product|
-    product.vm.box = "hashicorp/precise32"
-    product.vm.network "private_network", ip: "10.0.1.30"
+  config.vm.define "productcatalog" do |productcatalog|
+    productcatalog.vm.box = "hashicorp/precise32"
+    productcatalog.vm.network "private_network", ip: "10.0.1.30"
   end
 end
