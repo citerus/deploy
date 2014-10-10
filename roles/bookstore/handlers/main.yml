@@ -1,0 +1,4 @@
+
+- name: restart bookstore
+  service: name={{ context }} state=restarted
+  sudo_user: root
