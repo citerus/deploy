@@ -1,0 +1,16 @@
+- hosts: bookstore
+  sudo: yes
+  roles:
+    - common
+
+- hosts: shopping
+  roles:
+    - { role: bookstore, context: 'shopping' }
+
+- hosts: order
+  roles:
+    - { role: bookstore, context: 'order' }
+
+- hosts: product
+  roles:
+    - { role: bookstore, context: 'product' }

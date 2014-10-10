@@ -1,0 +1,2 @@
+- name: Install OpenJDK
+  apt: pkg={{ java_pkg }} update-cache=yes state=latest
